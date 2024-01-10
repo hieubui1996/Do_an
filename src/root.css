@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-bg:  #20c997;
+    --main-color: hotpink;
+    --pane-padding: 5px 42px;
+  }
