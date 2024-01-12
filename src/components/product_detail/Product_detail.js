@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Button, Card, CardBody, CardSubtitle, CardText, CardTitle, Col } from 'reactstrap';
-
+import './product_detail.css'
 export default function Product_detail(props) {
   const { product } = props;
   return (
     
       <Col sm={6} md={4} lg={3}>
         <div className='product-detail'>
-          <Link to ={`/product-detal/${product.id}`}>
+          <Link to ={`/product/${product.id}`}>
             <Card>
               <img
                 alt="Sample"
