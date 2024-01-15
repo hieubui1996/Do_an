@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from '../../components/header/Header'
 
 export default function Blog() {
   return (
-    <div>Blog</div>
+    <div>
+      <Header />
+      Blog</div>
   )
 }
