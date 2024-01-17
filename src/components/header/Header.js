@@ -16,6 +16,11 @@ import {
   FormGroup,
  
 } from 'reactstrap';
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import { FaRegCircleUser } from "react-icons/fa6";
+import { FiShoppingCart } from "react-icons/fi";
+
+import "./header.css"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,14 +60,35 @@ export default function Header() {
               </NavLink>
             </NavItem>
           </Nav>
-          <FormGroup>
+          {/* <FormGroup>
        <Input
       id="exampleSearch"
       name="search"
       placeholder="search"
       type="search"
     />
-  </FormGroup>
+   
+  </FormGroup> */}
+        <Nav>
+          <NavItem>
+            <NavLink href='/'>
+            <FaMagnifyingGlass />
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href='/'>
+            <FaRegCircleUser />
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href='/'>
+            <FiShoppingCart />
+            </NavLink>
+          </NavItem>
+        </Nav>
+
+
+
         </Collapse>
       </Navbar>
 
